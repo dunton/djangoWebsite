@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet' type='text/css'>
+    <title>Blog</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--JQuery file-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!--CSS styles file -->
+	{% load static %}
+    <link rel="stylesheet" href="{% static 'website/styles.css' %}"  type="text/css">
+
+</head>
+{% block content %}
+
+<div class="container">
+    <div class="header">
+        <div class="row">
+            <div class="col-md-6"><a href="{% url 'index' %}">
+                <img class="header-resize title-logo" src="{% static 'website/images/rd.jpg' %}" alt="Bitmoji">
+            </a></div>
+            <div class="col-md-6 text-right text-uppercase">
+                <h1 class="text-thin title-super">Ryan Dunton</h1>
+                <h4>Builder</h4>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="hr">
+                <hr>
+            </div>
+        </div>
+    </div>
+<body>
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h2>RYAN'S BLOG</h2>
+            <h4>What I'm reading, listening and thinking about</h4>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-8 banner-color text-muted">
+            <h4><b>Podcasts</b></h4>
+        </div>
+        <div class="col-md-4">
+            <div id="blog-pic">
+                <img class="img-responsive" src="{% static 'website/images/dunton.jpg' %}">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 blog-font">
+            <br>
+            <p>I am an avid podcast listener and have curated some of my favorite ones below!</p>
+            <ul>
+                <li>Exponent</li>
+                    <ul>
+                        <li>Podcast focused on the business side of technology companies hosted by Ben Thompson and James Allworth. Ben Thompson also publishes daily pieces on <a href="http://www.stratechery.com" target="_blank">Stratechery</a>.</li>
+                    </ul>
+                <li>How to Start a Startup</li>
+                    <ul>
+                        <li>Sam Altman, of Y Combinator fame, taught a course at Stanford on startups. Altman brought in celebrities from Silicon Valley in each class to give a lecture on their own area of expertise. Guest lecturers include Peter Thiel, Paul Graham, Keith Rabois, Reid Hoffman, Ben Horowitz, Marc Andreessen and more. This podcast is a compiliation of each of these lectures.</li>
+                    </ul>
+                <li>Internet History Podcast (Core Episodes Only)</li>
+                    <ul>
+                        <li>A great podcast for quickly touching base on the history of the internet and the companies created because of it. I would recommend to only listen to the core episodes and not the interviews, though those are interesting as well. 
+                        </li>
+                    </ul>
+            </ul>            
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 banner-color text-muted">
+            <h4><b>Favorite Recent Reads</b></h4>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 blog-font">
+            <br>
+            <p>Here are some of the best non-fiction books I have read recently.</p>
+            <ul>
+                <li><a href="https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296" taget="_blank">Zero to One </a>by <em>Peter Thiel</em></li>
+                <li><a href="https://www.amazon.com/How-Filthy-Rich-Rising-Asia/dp/1594632332" target="_blank">How to Get Filthy Rich in Rising Asia</a> (Novel) by <em>Mosim Hamid</em></li>
+                <li><a href="https://www.amazon.com/Inevitable-Understanding-Technological-Forces-Future/dp/0525428089" target="_blank">The Inevitable </a>by <em>Kevin Kelly</em> </li>
+                <li><a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555" target="_blank">Thinking, Fast and Slow</a> by<em>Daniel Kahneman</em></li>
+                <li><a href="https://www.amazon.com/Fooled-Randomness-Hidden-Markets-Incerto/dp/0812975219/" target="_blank">Fooled by Randomness</a> by <em>Nassim Nicholas-Taleb</em></li>
+            </ul>
+            <p>I will try to keep this list updated as I check more books off my <a href="https://medium.com/@rabois/reading-list-604c88ecefa4#.tq57lwxyy" target="_blank">Rabois Reads</a> list.</p>
+            <br>
+        </div>
+    </div>
+        <br>
+        <br>
+    <div class="row">
+        <div class="col-md-8 hr">
+            <hr>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="footer text-center">
+        <div class="row">
+            <div class="col-md-4">
+		<a href="{% url 'index' %}">
+                <img class="img-responsive thumbnail" src="{% static 'website/images/coffeeshops.jpg' %}" alt="movie trailer">
+                <h3 class="text-uppercase">Home</h3>
+                <p>Back to the home page!</p></a>
+            </div>
+            <div class="col-md-4">         
+		<a href="{% url 'pictures' %}">           
+                <img class="img-responsive thumbnail" src="{% static 'website/images/pictures.jpg' %}" alt="Coffeeshops">
+                <h3 class="text-uppercase">Pictures</h3>
+                <p>Pictures of what I've been up to!</p></a>
+            </div>
+            <div class="col-md-4">
+               
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row text-center">
+		<a href="{% url 'resume' %}">
+            <div class="col-md-8">
+                 <img class="img-responsive thumbnail" src="{% static 'website/images/resume.jpg' %}" alt="Hangman API">
+                <h3 class="text-uppercase">Resumé</h3>
+                <p>Ryan Dunton's resumé to date</p></a>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+{% endblock %}
+
+</html>

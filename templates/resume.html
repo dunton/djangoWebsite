@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet' type='text/css'>
+    <title>Resume</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--JQuery file-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!--CSS styles file -->
+{% load static %}
+    <link rel="stylesheet" href="{% static 'website/styles.css' %}" type="text/css">
+
+</head>
+
+{% block content %}
+<div class="container">
+    <div class="header">
+      <div class="col-md-6">
+          <a href="{% url 'index' %}"><img class="header-resize title-logo" src="{% static 'website/images/rd.jpg' %}" alt="Bitmoji"></a>
+        </div>
+        <div class="col-md-6 text-right text-uppercase">
+          <h1 class="text-thin title-super">Ryan Dunton</h1>
+          <h4>Builder</h4>
+        </div>
+    </div>
+    <div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="hr">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  		<div class="col-xs-12">
+  			<div style="background-color: white">
+  			
+  				<div class = "row">
+     				<div class="col-xs-12 text-center">
+        				<h2>Ryan Dunton</h2>
+      				</div>
+    			</div>
+    			<div class = "row">
+      				<div class="col-xs-12 text-center">
+        				<h3>208.262.6461 | ryandunton1@gmail.com | <a href = "http://www.github.com/dunton" target="_blank">github.com/dunton</a></h3>
+      				</div>
+    			</div>
+    			<div class = "row">
+      				<div class="col-xs-12 text-center">
+        				<h3>Technical Skillset: Python, SQL, HTMl/CSS, Javascript, Google Analytics, MS Excel, Linux </h3>
+      				</div>
+    			</div>
+    			<div class = "row">
+      				<div class="col-xs-12">
+        				<h3>Relevant Experience</h3>
+      				</div>
+    			</div>
+    			<hr>
+    			<div class="row">
+    				<div class="col-xs-12">
+    					<p>
+          					<span style="float: left"><h4>Udacity </span> 
+          					<span style="float: right">Denver, CO</h4></span>
+        				</p>
+    				</div>
+    				<div class="col-xs-12">
+    					<p>
+          					<span style="float: left">Full-Stack Developer Nanodegree </span> 
+          					<span style="float: right">2/16 - 6/16</span>
+        				</p>
+        			</div>
+        			
+      				<div class="col-xs-12">
+        				<ul>
+        					<li>Used powerful relational databases (PSQL, MySQL, Google Datastore, etc) to persistently store app data</li>
+      						</br>
+        					<li>Built PSQL database schema for a swiss-style tournament and program to query database based on results</li>
+      						</br>
+        					<li>Wrote an application showing local coffeeshops with Python, light Javascript, HTML and CSS. Designed to support any front-end (iOS, Android, Chrome, etc) and scale to support hundreds of thousands of users</li>
+        					</br>
+        					<li>Implemented and familiarized myself with OAuth systems such as Google+ and Facebook to verify user identity, registration and permissions for an application with CRUD functionality depending on user</li>
+        					</br>
+        					<li>Designed and programmed a backend game API through Google App Engine with endpoints allowing multiple platforms (iOS, Android, Google Chrome, etc) the ability to develop on top of the application</li>
+        					</br>
+        					<li>Utilized Linux to configure an AWS server to host a web application, connect to a PSQL database and set up an uncomplicated firewall (UFW) to only allow incoming connections for SSH, HTTP and NTP </li>
+        					</br>
+        					<li>Worked with Python frameworks such as Flask and Django to serve complex web applications</li>
+      					</ul>
+      				<hr>
+      				</div>
+    			</div>
+    			<div class="row">
+    				<div class="col-xs-12">
+    				<p>
+          				<span style="float: left"><h4>Quantifind </span> 
+          				<span style="float: right">Menlo Park, CA</h4></span>
+        			</p>
+        		</div>
+    			
+    			<div class="col-xs-12">
+    				<p>
+          				<span style="float: left">Talent Coordinator </span> 
+          				<span style="float: right">10/15 - 1/16</span>
+        			</p>
+        		</div>
+        		
+      			<div class="col-xs-12">
+        			<ul>
+        				<li>Quantifind set out to double the size its engineering and data science teams in 2016, with this increased emphasis on scaling the amount of technical talent I was asked to shift over and help with recruiting</li>
+      					</br>
+       					<li>Screened software engineers, outside sales reps and data scientists to determine if their previous work experience, education and culture fit warrants being moved on to the next step in the interview process</li>
+      					</br>
+        				<li>Worked job fairs to screen for engineers who were good fits both technically and culturally for Quantifind</li>
+      				</ul>
+      			</div>
+
+      			<div class="col-xs-12">
+        			<p>
+          				<span style="float: left">Sales Development </span> 
+          				<span style="float: right">4/15 - 10/15</span>
+        			</p>
+  				</div>
+      			<div class="col-xs-12">
+        			<ul>
+        				<li>Developed domain expertise - fluency in big data, marketing analytics, insights, the marketing solutions competitive landscape and other factors while building out Quantifind’s sales pipeline with sales team</li>
+      					</br>
+        				<li>  Worked in a client facing role with Outside Reps providing product knowledge and prospect information</li>
+      					</br>
+        				<li>  Assisted Quantifind’s Andreessen-Horowitz liaison in his pitches to the VC firm’s portfolio companies</li>
+        				</br>
+        				<li> Communicated with gate-keepers and high level executives to book initial meetings for Quantifind sales reps at large brands such as Spotify, Wendy’s, Red Bull, Wing Stop, Tim Horton’s and Pandora</li>
+        				</br>
+        				<li> Strategized and coordinated with Quantifind’s marketing team to craft and sharpen campaign outreach </li>
+        				</br>
+        				<li> Developed and presented the sales process overview presentation for new employees from scratch</li>
+        				</br>
+        				<li> Organized and targeted a 3,000 e-mail, focused marketing and outreach campaign organized by vertical</li>
+        				</br>
+      				</ul>
+    			</div>
+          <div class="col-xs-12">
+            <hr>
+          </div>
+    			<div class="col-xs-6">
+        			<h3>Education</h3>
+      			</div>
+      			<div class="col-xs-6">
+      				<h3>Collegiate Internships/Activities</h3>
+      			</div>
+      			<div class="col-xs-6">
+      				<ul>
+        			<span style="float: left">
+          				<li>Boise State University </span> <span style="float: right">8/11 - 12/14</span>
+          					<p><i>Degree: BA of Economics</i>
+            				<br>
+          					<i>Senior Thesis: "Economies of Scale in Electrical Production, a Historical Comparison"</i></p></li>
+        			<span style="float: left">
+          				<li> Whitworth University </span> 
+          					<span style="float: right">8/10 - 5/11</span>
+        					<p><i>Varsity Letter: Football</i></p></li>
+      				</ul>
+      			</div>
+      			<div class="col-xs-6">
+      				<ul>
+      					<li> Staff Intern, Office of Governor C.L. "Butch" Otter</li>
+      					<li> Wealth Management Intern, Idaho Trust Bank</li>
+      					<li> President, Interfraternity Council</li>
+      					<li> Marketing Intern, Tsuvo (Early Stage Startup)</li>
+      					<li> Economic Development Intern, Idaho Dept of Commerce</li>
+      					<li> Economics Club</li>
+      					<li> Pre-Law Society</li>
+      				</ul>
+      			</div>
+      		</div>
+    		</div>
+    		</div>
+		<br>
+		<br>  		
+		<div class="row text-center">
+                	<div class="col-md-4">
+                        <a href="{% url 'blog' %}">
+                    <img class="img-responsive thumbnail" src="{% static 'website/images/blog.jpg' %}" alt="movie trailer">
+                    <h3 class="text-uppercase">Blog</h3>
+                    <p>My random thoughts on life and tech</p></a>
+                </div>
+                <div class="col-md-4">
+                        <a href="{% url 'index' %}">
+                    <img class="img-responsive thumbnail" src="{% static 'website/images/coffeeshops.jpg' %}" alt="Coffeeshops">
+                    <h3 class="text-uppercase">Home Page</h3>
+                    <p>Back to Home Page</p></a>
+                </div>
+                <div class="col-md-4">
+                        <a href="{% url 'pictures' %}">
+                    <img class="img-responsive thumbnail" src="{% static 'website/images/pictures.jpg' %}" alt="Hangman API">
+                    <h3 class="text-uppercase">Pictures</h3>
+                    <p>Pictures of what I've been up to!</p></a>
+                </div>
+            </div>
+        </div>
+  	</div>
+    {% endblock %}
+</html>

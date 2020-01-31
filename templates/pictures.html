@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <title>Pictures</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'website/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/bootstrap.min.js' %}">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--JQuery file-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!--CSS styles file -->
+{% load static %}
+    <link rel="stylesheet" href="{% static 'website/styles.css' %}" type="text/css">
+
+</head>
+{% block content %}
+<div class="container">
+    <div class="header">
+        <div class="row">
+            <div class="col-md-6">
+		<a href="{% url 'index' %}">
+                <img class="header-resize title-logo" src="{% static 'website/images/rd.jpg' %}" alt="Bitmoji">
+            </a></div>
+            <div class="col-md-6 text-right text-uppercase">
+                <h1 class="text-thin title-super">Ryan Dunton</h1>
+                <h4>Builder</h4>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="hr">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <body>
+        <div class="row text-center pic-text">
+            <div class="col-md-12">
+                  <h2>Pictures From My Life</h2>
+            </div>
+        </div>
+        <div class="row text-center pic-text">
+            <div class="col-md-4">
+                <div class="img-responsive picture">
+                    <img src="{% static 'website/images/kathrine.jpg' %}" alt="picture">
+                    <p>I found a cardigan so I could match</p>
+                    <p>with Kathrine...it's a little tight.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-responsive picture">
+                    <img src="{% static 'website/images/vr.jpg' %}" alt="picture">
+                    <p>Built my first VR game courtesy of @UploadVR!</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-responsive picture">
+                    <img src="{% static 'website/images/nyc.jpg' %}" alt="picture">
+                    <p>Views from my buddies apartment on the</p>
+                    <p>Upper East Side of Manhattan.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center pic-text">
+            <div class="col-md-4">
+                <div class="img-responsive picture">
+                    <img src="{% static 'website/images/unionStation.jpg' %}" alt="picture">
+                    <p>Morning coding session by the Union</p>
+                    <p>City train station in Denver, Colorado!</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-responsive picture">
+                    <img src="{% static 'website/images/QF.jpg' %}" alt="picture">
+                    <p>Quantifinders searching for more Quantifinders</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="img-responsive picture">
+                    <img src="{% static 'website/images/bsu.jpg' %}" alt="picture">
+                    <p>Go Orange! Go Big Blue! Fight, fight, BSU!!!</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12 hr">
+                <hr>
+            </div>
+        </div>
+        <div class="row text-center">
+                <div class="col-md-4">
+			<a href="{% url 'blog' %}">
+                    <img class="img-responsive thumbnail" src="{% static 'website/images/blog.jpg' %}" alt="movie trailer">
+                    <h3 class="text-uppercase">Blog</h3>
+                    <p>My random thoughts on life and tech</p></a>
+                </div>
+                <div class="col-md-4">
+			<a href="{% url 'index' %}">
+                    <img class="img-responsive thumbnail" src="{% static 'website/images/coffeeshops.jpg' %}" alt="Coffeeshops">
+                    <h3 class="text-uppercase">Home Page</h3>
+                    <p>Back to Home Page</p></a>
+                </div>
+                <div class="col-md-4">
+			<a href="{% url 'resume' %}">
+                    <img class="img-responsive thumbnail" src="{% static 'website/images/resume.jpg' %}" alt="Hangman API">
+                    <h3 class="text-uppercase">Resumé</h3>
+                    <p>Ryan Dunton's resumé to date</p></a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+
+</html>
+{% endblock %}
+
+

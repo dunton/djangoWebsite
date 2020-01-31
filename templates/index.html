@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet' type='text/css'>
+		<title>Ryan's Website</title>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!--JQuery file-->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<!--CSS styles file -->
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'website/styles.css' %}" type="text/css" />
+
+	</head>
+	{% block content %}
+	<body>
+		<div class="container">
+			<header class="row"><a href="{% url 'index' %} text-decoration: none;"></a>
+				<div class="col-md-6">
+					{% load static %}
+					<img class="header-resize title-logo" src="static/website/images/rd.jpg" alt="Bitmoji">
+				</div>
+				<div class="col-md-6 text-right text-uppercase">
+					<h1 class="text-thin title-super">Ryan Dunton</h1>
+					<h4>Builder</h4>
+				</div>
+			</header>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="hr">
+						<hr>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+						<img class="img-responsive main-image" src="{% static 'website/images/friends.jpg' %}" alt="cda">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-muted">About Me</h2>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-4">
+					<a href="{% url 'blog' %}">
+					<img class="img-responsive thumbnail" src="{% static 'website/images/blog.jpg' %}" alt="movie trailer">
+					<h3 class="text-uppercase">Blog</h3>
+					<p>My random thoughts on life and tech</p></a>
+				</div>
+				<div class="col-md-4">
+					<a href="{% url 'pictures' %}">
+					<img class="img-responsive thumbnail" src="{% static 'website/images/pictures.jpg' %}" alt="Coffeeshops">
+					<h3 class="text-uppercase">Pictures</h3>
+					<p>Pictures of what I've been up to!</p></a>
+				</div>
+				<div class="col-md-4">
+					<a href="{% url 'resume' %}">
+					<img class="img-responsive thumbnail" src="{% static 'website/images/resume.jpg' %}" alt="Hangman API">
+					<h3 class="text-uppercase">Resumé</h3>
+					<p>Ryan Dunton's resumé to date</p></a>
+				</div>
+				</div>
+			</div>
+  		</div>
+  	</div>
+	</body>
+	{% endblock %}
+
+</html>
